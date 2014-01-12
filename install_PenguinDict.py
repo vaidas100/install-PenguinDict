@@ -1,7 +1,7 @@
 #!/usr/local/bin/python
 
 """
-Instaliuoja PinguinDict
+Instaliuoja PenguinDict
 """
 
 import os
