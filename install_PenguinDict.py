@@ -62,12 +62,14 @@ bashf.write('#!/bin/bash\n'
             %(username,username)
 )
 bashf.close()
-os.system('sudo chown -R %s:%s "%s"' %(username,username,bash_filename))
+os.system('sudo chown %s:%s "%s"' %(username,username,bash_filename))
 os.chmod(bash_filename, 0777)
 
 # sukuriame PenguinDict.desktop failus
-desktop_filename = penguindict_dir + 'PenguinDict.desktop' 
-desktopf = open(desktop_filename,'w')
+desktop_filename1 = penguindict_dir + 'PenguinDict.desktop'
+desktop_filename2 = desktop_dir + 'PenguinDict.desktop'
+desktop_filename3 = '/usr/share/applications/' + 'PenguinDict.desktop'
+desktopf = open(desktop_filename1,'w')
 desktopf.write('[Desktop Entry]\n'
                'Name=PenguinDict\n'
                'Version=1.0\n'
@@ -77,15 +79,17 @@ desktopf.write('[Desktop Entry]\n'
                'Terminal=false\n'
                'Type=Application\n'
                'Categories=Office;\n'
-               #'StartupNotify=true\n'
                %(bash_filename,penguindict_dir)
 )
 desktopf.close()
-os.system('sudo chown -R %s:%s "%s"' %(username,username,desktop_filename))
-os.chmod(desktop_filename, 0777)
-os.system('sudo cp %s %s' %(desktop_filename,desktop_dir))
-os.system('sudo cp %s %s' %(desktop_filename,'/usr/share/applications/'))
-# /home/<user>/.local/share/applications/ ?
+os.system('sudo cp %s %s' %(desktop_filename1,desktop_filename2))
+os.system('sudo cp %s %s' %(desktop_filename1,desktop_filename3))
+os.system('sudo chown %s:%s "%s"' %(username,username,desktop_filename1))
+os.system('sudo chown %s:%s "%s"' %(username,username,desktop_filename2))
+os.system('sudo chown %s:%s "%s"' %(username,username,desktop_filename3))
+os.chmod(desktop_filename1, 0777)
+os.chmod(desktop_filename2, 0777)
+os.chmod(desktop_filename3, 0777)
 
 # ishvedame praneshima apie trukstama faila Anglonas.dic
 last_print_text = [
