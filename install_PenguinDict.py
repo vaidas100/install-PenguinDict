@@ -56,10 +56,11 @@ os.system('make')
 # sukuriam PenguinDict.sh
 bash_filename = penguindict_dir + 'PenguinDict.sh'
 bashf = open(bash_filename,'w')
-bashf.write('#!/bin/bash\n'
-            'cd /home/%s/PenguinDict\n'
-            '/home/%s/PenguinDict/PenguinDict'
-            %(username,username)
+bashf.write(
+    '#!/bin/bash\n'
+    'cd /home/%s/PenguinDict\n'
+    '/home/%s/PenguinDict/PenguinDict'
+    %(username,username)
 )
 bashf.close()
 os.system('sudo chown %s:%s "%s"' %(username,username,bash_filename))
@@ -70,16 +71,17 @@ desktop_filename1 = penguindict_dir + 'PenguinDict.desktop'
 desktop_filename2 = desktop_dir + 'PenguinDict.desktop'
 desktop_filename3 = '/usr/share/applications/' + 'PenguinDict.desktop'
 desktopf = open(desktop_filename1,'w')
-desktopf.write('[Desktop Entry]\n'
-               'Name=PenguinDict\n'
-               'Version=1.0\n'
-               'Comment=EN-LT dictionary\n'
-               'Exec=%s\n'
-               'Icon=%sicon.png\n'
-               'Terminal=false\n'
-               'Type=Application\n'
-               'Categories=Office;\n'
-               %(bash_filename,penguindict_dir)
+desktopf.write(
+    '[Desktop Entry]\n'
+    'Name=PenguinDict\n'
+    'Version=1.0\n'
+    'Comment=EN-LT dictionary\n'
+    'Exec=%s\n'
+    'Icon=%sicon.png\n'
+    'Terminal=false\n'
+    'Type=Application\n'
+    'Categories=Office;\n'
+    %(bash_filename,penguindict_dir)
 )
 desktopf.close()
 os.system('sudo cp %s %s' %(desktop_filename1,desktop_filename2))
