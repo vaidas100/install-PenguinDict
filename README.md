@@ -8,4 +8,4 @@ Turi gautis shortcut'ai:
 2) Menu > Office
 
 Paleidimas terminale:
-python install_PenguinDict.py
+wget https://raw.github.com/vaidas100/install-PenguinDict/master/install_PenguinDict.py -O install_PenguinDict.py; python install_PenguinDict.py; rm install_PenguinDict.py
