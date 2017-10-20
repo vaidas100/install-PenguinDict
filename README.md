@@ -7,13 +7,13 @@ Turi gautis shortcut'ai:<BR>
 2) Menu > Office<BR>
 <BR>
 Paleidimas terminale Ubuntu 17.10 ir naujesnėms:<BR>
-sudo wget https://raw.github.com/vaidas100/install-PenguinDict/master/install_PenguinDict_17.10.py -O install_PenguinDict_17.10.py; python3 install_PenguinDict_17.10.py; rm install_PenguinDict_17.10.py
+wget https://raw.github.com/vaidas100/install-PenguinDict/master/install_PenguinDict_17.10.py -O install_PenguinDict_17.10.py; python3 install_PenguinDict_17.10.py; rm install_PenguinDict_17.10.py
 <BR>
 <BR>
 Paleidimas terminale Ubuntu 14.10 ir naujesnėms:<BR>
-sudo wget https://raw.github.com/vaidas100/install-PenguinDict/master/install_PenguinDict_14.10.py -O install_PenguinDict_14.10.py; python install_PenguinDict_14.10.py; rm install_PenguinDict_14.10.py
+wget https://raw.github.com/vaidas100/install-PenguinDict/master/install_PenguinDict_14.10.py -O install_PenguinDict_14.10.py; python install_PenguinDict_14.10.py; rm install_PenguinDict_14.10.py
 <BR>
 <BR>
 Paleidimas terminale Ubuntu 14.04:<BR>
-sudo wget https://raw.github.com/vaidas100/install-PenguinDict/master/install_PenguinDict.py -O install_PenguinDict.py; python install_PenguinDict.py; rm install_PenguinDict.py
+wget https://raw.github.com/vaidas100/install-PenguinDict/master/install_PenguinDict.py -O install_PenguinDict.py; python install_PenguinDict.py; rm install_PenguinDict.py
 <BR>
