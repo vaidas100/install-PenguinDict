@@ -106,9 +106,9 @@ longest_line_len = 0
 for line in last_print_text:
     if len(line) > longest_line_len:
         longest_line_len = len(line)
-print '#'*int(int(longest_line_len) + 8)
+print('#'*int(int(longest_line_len) + 8))
 for line in last_print_text:
     while len(line) < longest_line_len:
         line = line + ' '
-    print '#   ' + line + '   #'
-print '#'*int(int(longest_line_len) + 8)
+    print('#   ' + line + '   #')
+print('#'*int(int(longest_line_len) + 8))
