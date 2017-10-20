@@ -36,6 +36,9 @@ if os.path.exists(penguindict_dir):
             os.rmdir(os.path.join(root, name))
     shutil.rmtree(penguindict_dir)
 
+# sukuriame PenguinDict direktorija
+os.makedirs(penguindict_dir)
+
 # keichiame direktorija i home
 os.chdir(home_dir)
 
