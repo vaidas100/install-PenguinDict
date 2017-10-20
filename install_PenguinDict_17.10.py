@@ -43,7 +43,7 @@ os.makedirs(penguindict_dir)
 os.chdir(home_dir)
 
 # instaliuojame visokius modulius kuriu reikes
-os.system('sudo apt-get install git build-essential g++ libqt5webkit5-dev libsqlite3-dev make qt5-default qt5-qmake qtbase5-dev qtdeclarative5-dev qtlocation5-dev qtquick1-5-dev libqt5sensors5-dev')
+os.system('sudo apt-get install git build-essential g++ libqt5webkit5-dev libsqlite3-dev make qt5-default qt5-qmake qtbase5-dev qtdeclarative5-dev qtlocation5-dev libqt5sensors5-dev')
 
 # atsisiunchiame PenguinDict
 os.system('sudo git clone git://github.com/tuxmark5/PenguinDict.git %s' %(penguindict_dir))
