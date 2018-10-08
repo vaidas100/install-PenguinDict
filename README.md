@@ -4,8 +4,8 @@ install-PenguinDict
 Ubuntu/Xubuntu instaliuoja PenguinDict.
 
 Turi gautis shortcut'ai:
-1) ant desktop'o<BR>
-2) Menu > Office<BR>
+1) ant desktop'o
+2) Menu > Office
 
 Paleidimas terminale Ubuntu 17.10 ir naujesnėms:
 
@@ -19,4 +19,4 @@ Paleidimas terminale Ubuntu 14.10 ir naujesnėms:
 
 Paleidimas terminale Ubuntu 14.04:
 
-    wget https://raw.github.com/vaidas100/install-PenguinDict/master/install_PenguinDict.py -O install_PenguinDict.py; python install_PenguinDict.py; rm install_PenguinDict.py
+    wget https://raw.github.com/vaidas100/install-PenguinDict/master/install_PenguinDict_14.04.py -O install_PenguinDict_14.04.py; python install_PenguinDict_14.04.py; rm install_PenguinDict_14.04.py
